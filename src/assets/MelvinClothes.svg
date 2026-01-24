@@ -1,0 +1,22 @@
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- T-shirt Icon -->
+  <g transform="translate(10,15)">
+    <path d="M60 10 
+             L85 25 
+             L75 45 
+             L65 40 
+             L65 90 
+             L25 90 
+             L25 40 
+             L15 45 
+             L5 25 
+             L30 10 
+             Q40 20 50 10 
+             Z" fill="none" stroke="black" stroke-width="4" stroke-linejoin="round"></path>
+  </g>
+
+  <!-- Brand Text -->
+  <text x="130" y="75" font-family="Instagram Sans, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700" fill="black" letter-spacing="1">
+    melvin clothes
+  </text>
+</svg>
