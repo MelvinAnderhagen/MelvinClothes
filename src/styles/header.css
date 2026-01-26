@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Signature&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 20px;
+  gap: 350px;
   background-color: #f8f8f8;
+}
+
+.headerText {
+  font-family: "Momo Signature", cursive;
 }
 
 .headerLogo {
@@ -16,4 +23,18 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.headerLogoLink {
+  text-decoration: none;
+  color: black;
+}
+
+.headerLogoLink:hover {
+  color: grey;
+}
+
+.headerIconLinks {
+  text-decoration: none;
+  color: black;
 }

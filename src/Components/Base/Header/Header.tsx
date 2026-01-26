@@ -1,12 +1,13 @@
+import LeftHeaderIcons from "./LeftHeaderIcons";
 import Logo from "./Logo";
-import HeaderIcons from "./HeaderIcons";
+import RightHeaderIcons from "./RightHeaderIcons";
 
 const Header = () => {
   return (
     <header>
-      <div>Header</div>
+      <LeftHeaderIcons />
       <Logo />
-      <HeaderIcons />
+      <RightHeaderIcons />
     </header>
   );
 };

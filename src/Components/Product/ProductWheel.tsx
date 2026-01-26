@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import useProductsFetchTake5 from "../../Hooks/useProductsFetchTake5";
+import { CircularProgress } from "@mui/material";
 
 const ProductWheel = () => {
   const { products, loading, error } = useProductsFetchTake5();
   const navigate = useNavigate();
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <CircularProgress color="inherit" />;
   if (error) return <div>Error: {error}</div>;
 
   return (

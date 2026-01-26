@@ -8,6 +8,7 @@ import "./styles/home.css";
 import Products from "./Pages/Products";
 import Error from "./Components/Base/Error";
 import Product from "./Pages/Product";
+import Account from "./Pages/Account";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<Product />} />
+        <Route path="/account" element={<Account />} />
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>

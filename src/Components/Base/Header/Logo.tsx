@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Logo = () => {
   return (
     <div className="headerLogo">
-      <svg
+      {/* <svg
         width="50px"
         height="50px"
         viewBox="0 0 24 24"
@@ -26,9 +26,9 @@ const Logo = () => {
             stroke-linejoin="round"
           ></path>{" "}
         </g>
-      </svg>
-      <Link to="/">
-        <h1>MelvinClothes</h1>
+      </svg> */}
+      <Link className="headerLogoLink" to="/">
+        <h1 className="headerText">MelvinClothes</h1>
       </Link>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useProductFetch from "../Hooks/useProductFetch";
+import { CircularProgress } from "@mui/material";
 
 const Info = () => {
   const [randomId, setRandomId] = useState<number>();
@@ -12,7 +13,12 @@ const Info = () => {
 
   const { product, loading, error } = useProductFetch(randomId);
 
-  if (!randomId || loading) return <div>Loading...</div>;
+  if (!randomId || loading)
+    return (
+      <div>
+        <CircularProgress color="inherit" />
+      </div>
+    );
   if (error) return <div>Error: {error}</div>;
 
   return (
