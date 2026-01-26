@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 450px;
+  align-items: center;
+  background-color: grey;
+}
+
+.linkTree {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLinks {
+  text-decoration: none;
+  color: black;
+}
+
+.footerLinks:hover {
+  color: grey;
+}

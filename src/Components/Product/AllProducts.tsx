@@ -4,14 +4,33 @@ import ProductCard from "./ProductCard";
 
 interface AllProductsProps {
   selectedCategory: string;
+  selectedPrice: string;
 }
 
-const AllProducts = ({ selectedCategory }: AllProductsProps) => {
+const AllProducts = ({ selectedCategory, selectedPrice }: AllProductsProps) => {
   const { products, error, loading } = useProductsFetch();
 
-  const filteredProducts = selectedCategory
-    ? products.filter((product) => product.category === selectedCategory)
-    : products;
+  const filterByPriceRange = (price: number, range: string): boolean => {
+    if (!range) return true;
+
+    if (range.endsWith("+")) {
+      const minPrice = parseFloat(range.replace("+", ""));
+      return price >= minPrice;
+    }
+
+    const [min, max] = range.split("-");
+    const minPrice = parseFloat(min);
+    const maxPrice = parseFloat(max);
+
+    return price >= minPrice && price <= maxPrice;
+  };
+
+  const filteredProducts = products.filter((product) => {
+    const categoryMatch =
+      !selectedCategory || product.category === selectedCategory;
+    const priceMatch = filterByPriceRange(product.price, selectedPrice);
+    return categoryMatch && priceMatch;
+  });
 
   if (loading) return <CircularProgress color="inherit" />;
   if (error) return <div>Error: {error}</div>;

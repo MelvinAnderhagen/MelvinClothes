@@ -5,10 +5,12 @@ import "./styles/header.css";
 import "./styles/products.css";
 import "./styles/product.css";
 import "./styles/home.css";
+import "./styles/footer.css";
 import Products from "./Pages/Products";
 import Error from "./Components/Base/Error";
 import Product from "./Pages/Product";
 import Account from "./Pages/Account";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>
