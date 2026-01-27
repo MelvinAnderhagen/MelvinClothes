@@ -7,7 +7,6 @@ const Info = () => {
 
   useEffect(() => {
     const id = Math.floor(Math.random() * 20) + 1;
-    console.log(id);
     setRandomId(id);
   }, []);
 

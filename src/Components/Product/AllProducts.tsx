@@ -32,20 +32,23 @@ const AllProducts = ({ selectedCategory, selectedPrice }: AllProductsProps) => {
     return categoryMatch && priceMatch;
   });
 
-  if (loading) return <CircularProgress color="inherit" />;
   if (error) return <div>Error: {error}</div>;
 
   return (
     <div className="productsContainer">
-      {filteredProducts.map((product) => (
-        <ProductCard
-          key={product.id}
-          id={product.id}
-          title={product.title}
-          price={product.price}
-          image={product.image}
-        />
-      ))}
+      {loading ? (
+        <CircularProgress color="inherit" />
+      ) : (
+        filteredProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            title={product.title}
+            price={product.price}
+            image={product.image}
+          />
+        ))
+      )}
     </div>
   );
 };

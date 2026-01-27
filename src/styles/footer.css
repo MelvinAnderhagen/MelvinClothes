@@ -3,19 +3,29 @@ footer {
   justify-content: center;
   gap: 450px;
   align-items: center;
-  background-color: grey;
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  min-height: 150px;
+  margin-top: auto;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  border-top: 1px solid #333;
 }
 
 .linkTree {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .footerLinks {
   text-decoration: none;
-  color: black;
+  color: #b0b0b0;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .footerLinks:hover {
-  color: grey;
+  color: #ffffff;
 }

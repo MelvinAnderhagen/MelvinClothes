@@ -1,0 +1,25 @@
+.accountContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  height: 100vh;
+}
+
+.accountContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountName {
+  font-size: 2.3rem;
+}
+
+.accountUsername {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.accountParagraph {
+  font-size: 26px;
+}

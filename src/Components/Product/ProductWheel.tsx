@@ -17,7 +17,7 @@ const ProductWheel = () => {
             src={product.image}
             alt={product.title}
             className="productWheelImage"
-            onClick={() => navigate("")}
+            onClick={() => navigate(`/product/${product.id}`)}
           />
           <p className="productWheelPrice">${product.price}</p>
           <button className="productWheelButton">Buy</button>

@@ -3,8 +3,13 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { NavLink } from "react-router-dom";
+import { Button } from "@mui/material";
+import useLogin from "../../../Hooks/useLogin";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 const RightHeaderIcons = () => {
+  const { isAuthenticated, logout } = useLogin();
+
   return (
     <div className="headerIcons">
       <NavLink to="/cart" className="headerIconLinks">
@@ -16,15 +21,38 @@ const RightHeaderIcons = () => {
           )
         }
       </NavLink>
-      <NavLink to="/account" className="headerIconLinks">
-        {({ isActive }) =>
-          isActive ? (
-            <AccountCircleIcon sx={{ fontSize: "32px" }} />
-          ) : (
-            <AccountCircleOutlinedIcon sx={{ fontSize: "32px" }} />
-          )
-        }
-      </NavLink>
+      {isAuthenticated ? (
+        <NavLink to="/account" className="headerIconLinks">
+          {({ isActive }) =>
+            isActive ? (
+              <AccountCircleIcon sx={{ fontSize: "32px" }} />
+            ) : (
+              <AccountCircleOutlinedIcon sx={{ fontSize: "32px" }} />
+            )
+          }
+        </NavLink>
+      ) : (
+        <NavLink to="/login" className="headerIconLinks">
+          <Button
+            variant="outlined"
+            size="small"
+            sx={{
+              textTransform: "none",
+              fontSize: "14px",
+              padding: "6px 12px",
+            }}
+          >
+            Sign In
+          </Button>
+        </NavLink>
+      )}
+      {isAuthenticated ? (
+        <a style={{ cursor: "pointer" }} onClick={() => logout()}>
+          <LogoutIcon sx={{ fontSize: "32px" }} />
+        </a>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
