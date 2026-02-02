@@ -7,43 +7,43 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 
 ## Startup project
 
-:white_check_mark: git clone https://github.com/MelvinAnderhagen/MelvinClothes.git / download via ZIP
-:white_check_mark: cd MelvinClothes
-:white_check_mark: **npm install**
-:white_check_mark: npm run dev
-:white_check_mark: http://localhost:5173
+- :white_check_mark: git clone https://github.com/MelvinAnderhagen/MelvinClothes.git / download via ZIP
+- :white_check_mark: cd MelvinClothes
+- :white_check_mark: **npm install**
+- :white_check_mark: npm run dev
+- :white_check_mark: http://localhost:5173
 
 ## Requirments met
 
-:white_check_mark: SPA + Routing (React Router)
-:white_check_mark: Komponentstruktur + Props
-:white_check_mark: State + Interaktivitet (useState)
-:white_check_mark: Data + API (useEffect + ex: fetch)
-:white_check_mark: README
-:white_check_mark: Struktur + motivering
-:white_check_mark: Extra förbättringar
+- :white_check_mark: SPA + Routing (React Router)
+- :white_check_mark: Komponentstruktur + Props
+- :white_check_mark: State + Interaktivitet (useState)
+- :white_check_mark: Data + API (useEffect + ex: fetch)
+- :white_check_mark: README
+- :white_check_mark: Struktur + motivering
+- :white_check_mark: Extra förbättringar
 
 ## Reflection
 
 ### File structure
 
-Components/Base -> Stores base components that are shown on every page
-Component/Others -> Stores components that build my pages ex. product
-Hooks -> Stores hooks that fetches data async and returns useStates local state + loading and error from API
-Interfaces -> Stores models for data coming in from API
-Layouts -> Stores layouts that are used to display the website
-Pages -> Stores all pages that are used as routes
-Styles -> Stores all css files for styling in components
-App -> Defines all routes, imports css and uses a global variable
+- Components/Base -> Stores base components that are shown on every page
+- Component/Others -> Stores components that build my pages ex. product
+- Hooks -> Stores hooks that fetches data async and returns useStates local state + loading and error from API
+- Interfaces -> Stores models for data coming in from API
+- Layouts -> Stores layouts that are used to display the website
+- Pages -> Stores all pages that are used as routes
+- Styles -> Stores all css files for styling in components
+- App -> Defines all routes, imports css and uses a global variable
 
 ### Routing
 
-/ -> Index page, displays home.tsx
-/Account -> Displays a detailed view for the user that is currently logged in
-/Contact -> Displays further information on the organisation
-/Login -> Displays login page for handling login via username and password
-/Products -> Displays all products from API, handles sorting via price and category
-/Product/:id -> Displays a specific product from API
+- / -> Index page, displays home.tsx
+- /Account -> Displays a detailed view for the user that is currently logged in
+- /Contact -> Displays further information on the organisation
+- /Login -> Displays login page for handling login via username and password
+- /Products -> Displays all products from API, handles sorting via price and category
+- /Product/:id -> Displays a specific product from API
 
 ### Components
 
