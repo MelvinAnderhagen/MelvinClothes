@@ -2,30 +2,32 @@
 
 ## LINKS
 
-### - Description[Link Text](#description)
+### - [Description](#open_book-description)
 
-### - Startup[Link Text](#startup-project)
+### - [Startup](#rocket-startup-project)
 
-## - Requirments met[Link Text](#requirments-met)
+## - [Requirments met](#white_check_mark-requirments-met)
 
-### - File structure[Link Text](#file-structure)
+## - [Project Reflection](#brain-project-reflection)
 
-### - Routing[Link Text](#routing)
+### - [File structure](#file_folder-file-structure)
 
-### - Components[Link Text](#components)
+### - [Routing](#twisted_rightwards_arrows-routing)
 
-### - Props[Link Text](#props)
+### - [Components](#jigsaw-components)
 
-### - States[Link Text](#states)
+### - [Props](#link-props)
 
-### - API[Link Text](#api)
+### - [State Management](#zap-state-management)
 
-## Description
+### - [API](#globe_with_meridians-api)
+
+## :open_book: Description
 
 MelvinClothes is a ecommerce website where you can find products such as clothing and electronics.
 It uses a simple design and creates sleek and minimalistic shopping for all consumers.
 
-## Startup project
+## :rocket: Startup project
 
 - :white_check_mark: git clone https://github.com/MelvinAnderhagen/MelvinClothes.git / download via ZIP
 - :white_check_mark: cd MelvinClothes
@@ -33,7 +35,7 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 - :white_check_mark: npm run dev
 - :white_check_mark: http://localhost:5173
 
-## Requirments met
+## :white_check_mark: Requirments met
 
 - :white_check_mark: SPA + Routing (React Router)
 - :white_check_mark: Komponentstruktur + Props
@@ -43,9 +45,9 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 - :white_check_mark: Struktur + motivering
 - :white_check_mark: Extra förbättringar
 
-## Reflection
+## :brain: Project Reflection
 
-### File structure
+### :file_folder: File structure
 
 - Components/Base -> Stores base components that are shown on every page
 - Component/Others -> Stores components that build my pages ex. product
@@ -56,7 +58,7 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 - Styles -> Stores all css files for styling in components
 - App -> Defines all routes, imports css and uses a global variable
 
-### Routing
+### :twisted_rightwards_arrows: Routing
 
 - / -> Index page, displays home.tsx
 - /Account -> Displays a detailed view for the user that is currently logged in
@@ -65,7 +67,7 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 - /Products -> Displays all products from API, handles sorting via price and category
 - /Product/:id -> Displays a specific product from API
 
-### Components
+### :jigsaw: Components
 
 In my project I have made it a standard to use multiple components, some use cases are for more readable and cleaner code, others for reusable components (they are used in more than one occasion).
 
@@ -76,7 +78,7 @@ AllProducts component uses ProductCard as a component for cleaner and more reada
 Product page uses ProductDetails and ProductWheel as components.
 ProductDetails being used for more readable code and ProductWheel for reusable code ex. Home page also uses ProductWheel.
 
-### Props
+### :link: Props
 
 I use props as a way to pass in useStates local and interactive state.
 
@@ -88,7 +90,7 @@ Another example where I use props is in Products.tsx, where I keep track on the 
 
 A third example where I use props is inside my useProductFetch hook, where I take in a productId through props and use it to fetch the specific product.
 
-### States
+### :zap: State Management
 
 I use states throughout my whole project, one of the more important states that I use are in my hooks folder. The idea behind breaking out my fetches into seperate hooks is for readability and reusablity. Almost all my components uses fetch which would make all my components bundled with the same code over and over again if I did not set it up in this manor.
 
@@ -98,7 +100,7 @@ useProductsFetch.tsx handles the API call and sets the state of products to the 
 
 Another example of this is in my productDetails where I create a useState to flip the active state of the favorite icon.
 
-### API
+### :globe_with_meridians: API
 
 API Docs - https://fakestoreapi.com/docs
 
