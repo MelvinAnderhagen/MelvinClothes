@@ -2,25 +2,25 @@
 
 ## LINKS
 
-### - [Description](#open_book-description)
+- ### [Description](#open_book-description)
 
-### - [Startup](#rocket-startup-project)
+- ### [Startup](#rocket-startup-project)
 
-## - [Requirments met](#white_check_mark-requirments-met)
+- ### [Requirments met](#white_check_mark-requirments-met)
 
-## - [Project Reflection](#brain-project-reflection)
+- ### [Project Reflection](#brain-project-reflection)
 
-### - [File structure](#file_folder-file-structure)
+- ### [File structure](#file_folder-file-structure)
 
-### - [Routing](#twisted_rightwards_arrows-routing)
+- ### [Routing](#twisted_rightwards_arrows-routing)
 
-### - [Components](#jigsaw-components)
+- ### [Components](#jigsaw-components)
 
-### - [Props](#link-props)
+- ### [Props](#link-props)
 
-### - [State Management](#zap-state-management)
+- ### [State Management](#zap-state-management)
 
-### - [API](#globe_with_meridians-api)
+- ### [API](#globe_with_meridians-api)
 
 ## :open_book: Description
 
