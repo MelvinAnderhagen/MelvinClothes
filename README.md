@@ -49,8 +49,7 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 
 ### :file_folder: File structure
 
-- Components/Base -> Stores base components that are shown on every page
-- Component/Others -> Stores components that build my pages ex. product
+- Components -> Stores base, product and filter components that laters is used on pages
 - Hooks -> Stores hooks that fetches data async and returns useStates local state + loading and error from API
 - Interfaces -> Stores models for data coming in from API
 - Layouts -> Stores layouts that are used to display the website

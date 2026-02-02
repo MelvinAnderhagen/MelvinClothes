@@ -7,6 +7,7 @@ import "./styles/product.css";
 import "./styles/home.css";
 import "./styles/footer.css";
 import "./styles/account.css";
+import "./styles/contact.css";
 import Products from "./Pages/Products";
 import Error from "./Components/Base/Error";
 import Product from "./Pages/Product";
