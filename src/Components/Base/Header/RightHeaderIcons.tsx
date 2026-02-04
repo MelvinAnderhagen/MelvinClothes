@@ -35,11 +35,14 @@ const RightHeaderIcons = () => {
         <NavLink to="/login" className="headerIconLinks">
           <Button
             variant="outlined"
-            size="small"
+            size="medium"
             sx={{
               textTransform: "none",
               fontSize: "14px",
-              padding: "6px 12px",
+              color: "black",
+              padding: "0px 16px",
+              borderColor: "black",
+              borderRadius: "36px",
             }}
           >
             Sign In
@@ -48,7 +51,7 @@ const RightHeaderIcons = () => {
       )}
       {isAuthenticated ? (
         <a style={{ cursor: "pointer" }} onClick={() => logout()}>
-          <LogoutIcon sx={{ fontSize: "32px" }} />
+          <LogoutIcon sx={{ fontSize: "30px" }} />
         </a>
       ) : (
         ""

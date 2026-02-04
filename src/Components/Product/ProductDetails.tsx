@@ -4,8 +4,10 @@ import { CircularProgress } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useState } from "react";
+import useLogin from "../../Hooks/useLogin";
 
 const ProductDetails = () => {
+  const { isAuthenticated } = useLogin();
   const { id } = useParams<{ id: string }>();
   const productId = id ? parseInt(id, 10) : undefined;
   const { product, loading, error } = useProductFetch(productId);
@@ -17,9 +19,16 @@ const ProductDetails = () => {
 
   return (
     <div className="product-detail">
-      <div onClick={() => setFavorite((prev) => !prev)}>
-        {favorite ? <FavoriteBorderIcon /> : <FavoriteIcon />}
-      </div>
+      {isAuthenticated ? (
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => setFavorite((prev) => !prev)}
+        >
+          {favorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+        </div>
+      ) : (
+        ""
+      )}
       <div className="productDetailsLeft">
         <img
           className="productDetailsImage"

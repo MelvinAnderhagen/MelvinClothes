@@ -8,6 +8,7 @@ import "./styles/home.css";
 import "./styles/footer.css";
 import "./styles/account.css";
 import "./styles/contact.css";
+import "./styles/cart.css";
 import Products from "./Pages/Products";
 import Error from "./Components/Base/Error";
 import Product from "./Pages/Product";
@@ -15,6 +16,7 @@ import Account from "./Pages/Account";
 import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import { useState } from "react";
+import Cart from "./Pages/Cart";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -26,6 +28,7 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/account" element={<Account username={username} />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
         <Route
           path="/login"
           element={<Login setUsername={setUsername} username={username} />}
