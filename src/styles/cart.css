@@ -123,6 +123,13 @@ h2 {
   opacity: 0.85;
 }
 
+.cartSuggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
