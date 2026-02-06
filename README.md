@@ -65,6 +65,7 @@ It uses a simple design and creates sleek and minimalistic shopping for all cons
 - /Login -> Displays login page for handling login via username and password
 - /Products -> Displays all products from API, handles sorting via price and category
 - /Product/:id -> Displays a specific product from API
+- /Cart -> Displays a shoppingcart from API
 
 ### :jigsaw: Components
 
